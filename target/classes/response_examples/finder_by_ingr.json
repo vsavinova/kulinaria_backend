@@ -1,0 +1,20 @@
+[
+  {
+    "annotation": "Simple pancakes",
+    "rec_name": "Pancakes",
+    "rating": 5,
+    "photo": "blob11: X'613938646530'",
+    "cooking_time": "01:00:00",
+    "nutr_val_name": "nourishing",
+    "rec_id": 2
+  },
+  {
+    "annotation": "Tasty chocolate coockies",
+    "rec_name": "Chocolate cookies",
+    "rating": 3.5,
+    "photo": "blob12: X'6336376466383031'",
+    "cooking_time": "00:45:00",
+    "nutr_val_name": "medium",
+    "rec_id": 1
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2018-02-01",
+    "annotation": "Tasty chocolate coockies",
+    "rec_name": "Chocolate cookies",
+    "rating": 3.6666666666666665,
+    "photo": "blob0: X'6336376466383031'",
+    "cooking_time": "00:45:00",
+    "nutr_val_name": "medium",
+    "rec_id": 1
+  },
+  {
+    "date": "2018-02-01",
+    "annotation": "Simple pancakes",
+    "rec_name": "Pancakes",
+    "rating": 5,
+    "photo": "blob1: X'613938646530'",
+    "cooking_time": "01:00:00",
+    "nutr_val_name": "nourishing",
+    "rec_id": 2
+  }
+]

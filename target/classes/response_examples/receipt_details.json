@@ -1,0 +1,51 @@
+{
+  "ingredients": [
+    {
+      "unit": "pack",
+      "ing_name": "butter",
+      "count": 1,
+      "ingr_id": 6
+    },
+    {
+      "unit": "glass",
+      "ing_name": "sugar",
+      "count": 1,
+      "ingr_id": 4
+    },
+    {
+      "unit": "thing",
+      "ing_name": "egg",
+      "count": 1,
+      "ingr_id": 1
+    },
+    {
+      "unit": "glass",
+      "ing_name": "flour",
+      "count": 1.5,
+      "ingr_id": 3
+    },
+    {
+      "unit": "thing",
+      "ing_name": "chocolate",
+      "count": 1,
+      "ingr_id": 33
+    }
+  ],
+  "steps": [
+    {
+      "photo": "blob0: X'12ad34b5'",
+      "description": "Берем масло и взбиваем с сахаром. Добавляем яйцо, соль и продолжаем взбивать",
+      "step_id": 1
+    },
+    {
+      "photo": "blob1: X'13ad34b5'",
+      "description": "Насыпаем муку и тщательно перемешиваем ",
+      "step_id": 2
+    },
+    {
+      "photo": "blob2: X'12ad34b5'",
+      "description": "Крошим шоколад на кусочки и добавляем в тесто. Выпекаем в разогретой духовке 20 мин",
+      "step_id": 3
+    }
+  ]
+}
