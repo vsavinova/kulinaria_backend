@@ -52,26 +52,26 @@ public class DBStarter {
 //
 //    }
 
-//    private static String getHash(String pwd) throws NoSuchAlgorithmException {
-//        MessageDigest md = MessageDigest.getInstance("MD5");
-//        md.update(pwd.getBytes());
-//        byte byteData[] = md.digest();
-//
-//        //convert the byte to hex format method 2
-//        StringBuffer hexString = new StringBuffer();
-//        for (int i=0;i<byteData.length;i++) {
-//            String hex=Integer.toHexString(0xff & byteData[i]);
-//            if(hex.length()==1) hexString.append('0');
-//            hexString.append(hex);
-//        }
-//        String hash = hexString.toString();
-//        System.out.println("Pwd(in hex format):: " + hash);
-//        return hash;
-//    }
+    private static String getHash(String pwd) throws NoSuchAlgorithmException {
+        MessageDigest md = MessageDigest.getInstance("MD5");
+        md.update(pwd.getBytes());
+        byte byteData[] = md.digest();
+
+        //convert the byte to hex format method 2
+        StringBuffer hexString = new StringBuffer();
+        for (int i=0;i<byteData.length;i++) {
+            String hex=Integer.toHexString(0xff & byteData[i]);
+            if(hex.length()==1) hexString.append('0');
+            hexString.append(hex);
+        }
+        String hash = hexString.toString();
+        System.out.println("Pwd(in hex format):: " + hash);
+        return hash;
+    }
 
     public static void main(String[] args) {
         try {
-//            String qwerty123 = getHash("qwerty123");
+            String qwerty123 = getHash("qwerty123");
 //            String token = testRSA(); //testToken();
 //            Class.forName("org.h2.Driver");
 //            Connection conn = DriverManager.

@@ -69,9 +69,9 @@ public class UserService {
         try {
             Map<Integer, Double> receiptsRating = getReceiptsRatingByUserId(userId);
             ResultSet resultSet = dbHelper.requestToDB("SELECT r.REC_ID, r.REC_NAME, r.ANNOTATION, " +
-                    " r.COOKING_TIME, r.PUBLICATION_DATE, r.PHOTO, " +
+                    " r.TIME, r.PUBLICATION_DATE, r.PHOTO, c.CAT_NAME, " +
                     " nv.NUTR_VAL_NAME FROM RECEIPT as r, NUTRITIONAL_VALUE as nv, CATEGORY as c" +
-                    " WHERE r.NUTR_ID = nv.NUTR_ID and r.USER_ID = " + userId + " GROUP BY (REC_NAME)");
+                    " WHERE r.NUTR_ID = nv.NUTR_ID and c.CAT_ID =r.CAT_ID and r.USER_ID = " + userId + " GROUP BY (REC_NAME)");
 
             while (resultSet.next()) {
                 int rec_id = resultSet.getInt("rec_id");
@@ -80,8 +80,9 @@ public class UserService {
                 Date date = resultSet.getDate("publication_date");
                 Blob photo = resultSet.getBlob("photo");
                 String annotation = resultSet.getString("annotation");
-                Time cooking_time = resultSet.getTime("cooking_time");
+                Integer cooking_time = resultSet.getInt("time");
                 String nutr_val_name = resultSet.getString("nutr_val_name");
+                String cat_name = resultSet.getString("cat_name");
                 double rating = 0;
                 if (receiptsRating.containsKey(rec_id))
                     rating = receiptsRating.get(rec_id);
@@ -93,9 +94,9 @@ public class UserService {
                 receipt.put("date", date);
                 receipt.put("photo", photo);
                 receipt.put("annotation", annotation);
-                receipt.put("cooking_time", cooking_time);
+                receipt.put("time", cooking_time);
                 receipt.put("nutr_val_name", nutr_val_name);
-                receipt.put("cooking_time", cooking_time);
+                receipt.put("cat_name", cat_name);
                 result.put(receipt);
             }
         } catch (SQLException e) {
@@ -128,7 +129,7 @@ public class UserService {
             Map<Integer, Double> receiptsRating = getReceiptsRatingByUserId(null);
             ResultSet resultSet = dbHelper.requestToDB(
                     "SELECT r.REC_ID, r.REC_NAME, u.USER_NAME, r.PUBLICATION_DATE, r.PHOTO, r.ANNOTATION, " +
-                            " r.COOKING_TIME, nv.NUTR_VAL_NAME FROM FAVORITE as f, RECEIPT as r, USER u, " +
+                            " r.TIME, nv.NUTR_VAL_NAME FROM FAVORITE as f, RECEIPT as r, USER u, " +
                             " NUTRITIONAL_VALUE as nv, CATEGORY as c WHERE f.rec_id = r.REC_ID " +
                             " and f.user_id = " + userId + " AND r.USER_ID = u.USER_ID AND r.NUTR_ID = nv.NUTR_ID " +
                             " AND r.CAT_ID = c.CAT_ID");
@@ -140,7 +141,7 @@ public class UserService {
                 Date date = resultSet.getDate("publication_date");
                 Blob photo = resultSet.getBlob("photo");
                 String annotation = resultSet.getString("annotation");
-                Time cooking_time = resultSet.getTime("cooking_time");
+                Integer cooking_time = resultSet.getInt("time");
                 String nutr_val_name = resultSet.getString("nutr_val_name");
                 double rating = 0;
                 if (receiptsRating.containsKey(rec_id))
@@ -154,9 +155,8 @@ public class UserService {
                 receipt.put("date", date);
                 receipt.put("photo", photo);
                 receipt.put("annotation", annotation);
-                receipt.put("cooking_time", cooking_time);
+                receipt.put("time", cooking_time);
                 receipt.put("nutr_val_name", nutr_val_name);
-                receipt.put("cooking_time", cooking_time);
                 result.put(receipt);
             }
         } catch (SQLException e) {

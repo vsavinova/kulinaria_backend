@@ -126,7 +126,7 @@ public class MainController {
         User auth = userService.auth(user.getLogin(), user.getPassword());
         String token = null;
         if (auth != null)
-            token = TockenManager.getToken(auth);
+            token = Utils.createSuccess(TockenManager.getToken(auth));
         else
             token = Utils.createError("authentication failed", "").toString();
         return token;
@@ -172,7 +172,7 @@ public class MainController {
     }
 
 
-    @PostMapping(value = "/create_receipt",
+    @PostMapping(value = "/update_user_info",
             consumes = "application/json",
             produces = "application/json")
     @ResponseBody
