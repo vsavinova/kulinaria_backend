@@ -172,7 +172,7 @@ public class MainController {
     }
 
 
-    @PostMapping(value = "/create_receipt",
+    @PostMapping(value = "/update_user_info",
             consumes = "application/json",
             produces = "application/json")
     @ResponseBody

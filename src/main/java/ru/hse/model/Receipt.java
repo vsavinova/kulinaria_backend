@@ -10,21 +10,21 @@ public class Receipt {
     private Date publicationDate;
     private String photo;
     private String annotation;
-    private Date cooking_time;
+    private Date time;
     private int nutrId;
     private int catId;
     private List<Ingredient> ingredients;
     private List<Step> steps;
     private String token;
 
-    public Receipt(int recId, String recName, int userId, Date publicationDate, String photo, String annotation, Date cooking_time, int nutrId, int catId, List<Ingredient> ingredients, List<Step> steps, String token) {
+    public Receipt(int recId, String recName, int userId, Date publicationDate, String photo, String annotation, Date time, int nutrId, int catId, List<Ingredient> ingredients, List<Step> steps, String token) {
         this.recId = recId;
         this.recName = recName;
         this.userId = userId;
         this.publicationDate = publicationDate;
         this.photo = photo;
         this.annotation = annotation;
-        this.cooking_time = cooking_time;
+        this.time = time;
         this.nutrId = nutrId;
         this.catId = catId;
         this.ingredients = ingredients;
@@ -83,12 +83,12 @@ public class Receipt {
         this.annotation = annotation;
     }
 
-    public Date getCooking_time() {
-        return cooking_time;
+    public Date getTime() {
+        return time;
     }
 
-    public void setCooking_time(Date cooking_time) {
-        this.cooking_time = cooking_time;
+    public void setTime(Date time) {
+        this.time = time;
     }
 
     public String getToken() {

@@ -6,14 +6,11 @@ import org.springframework.stereotype.Component;
 import ru.hse.model.Ingredient;
 import ru.hse.model.Receipt;
 import ru.hse.model.Step;
-import ru.hse.utils.Errors;
 
-import java.io.ObjectInputStream;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
 
 @Component
 public class DBHelper {
@@ -39,19 +36,30 @@ public class DBHelper {
         JSONArray result = new JSONArray();
         try {
             ResultSet resultSet = requestToDB("SELECT r.REC_NAME, r.PHOTO, " +
-                    "r.COOKING_TIME, sum(v.stars)/count(v.stars) as rating" +
-                    " from RECEIPT as r, VOTING as v WHERE r.rec_id = v.rec_id" +
-                    " GROUP BY (REC_NAME)");
+                    " r.TIME, sum(v.stars)/count(v.stars) as rating" +
+                    ", nv.NUTR_VAL_NAME, cat.CAT_NAME" +
+                    " from RECEIPT as r, VOTING as v, NUTRITIONAL_VALUE as nv, CATEGORY as cat" +
+                    " WHERE r.rec_id = v.rec_id " +
+                    " and r.NUTR_ID=nv.NUTR_ID and r.CAT_ID = cat.CAT_ID " +
+                    " GROUP BY (REC_NAME) " +
+                    " UNION SELECT r.REC_NAME, r.PHOTO, r.TIME, 0 as rating, nv.NUTR_VAL_NAME, " +
+                    " cat.CAT_NAME from RECEIPT as r, VOTING as v, NUTRITIONAL_VALUE as nv, CATEGORY as cat" +
+                    " WHERE r.REC_ID NOT IN (SELECT v.rec_id FROM VOTING as v)" +
+                    " and r.NUTR_ID=nv.NUTR_ID and r.CAT_ID = cat.CAT_ID");
             while (resultSet.next()) {
                 String recName = resultSet.getString("REC_NAME");
                 Blob photo = resultSet.getBlob("PHOTO");
-                Time cooking_time = resultSet.getTime("COOKING_TIME");
+                Integer cooking_time = resultSet.getInt("TIME");
                 double rating = resultSet.getDouble("RATING");
+                String nutr_val_name = resultSet.getString("NUTR_VAL_NAME");
+                String category = resultSet.getString("CAT_NAME");
                 JSONObject jsonObject = new JSONObject();
                 jsonObject.put("rec_name", recName);
                 jsonObject.put("photo", photo);
-                jsonObject.put("cooking_time", cooking_time);
+                jsonObject.put("time", cooking_time);
                 jsonObject.put("rating", rating);
+                jsonObject.put("dificulty", nutr_val_name);
+                jsonObject.put("category", category);
                 result.put(jsonObject);
             }
         } catch (SQLException e) {
@@ -181,7 +189,7 @@ public class DBHelper {
 
     public String createReceipt(Receipt receipt) throws SQLException {
         String photo = receipt.getPhoto();
-        java.util.Date cooking_time = receipt.getCooking_time();
+        java.util.Date cooking_time = receipt.getTime();
         String statement1 = String.format("INSERT INTO RECEIPT (REC_NAME, USER_ID, PUBLICATION_DATE," +
                 "                     PHOTO, ANNOTATION, COOKING_TIME, NUTR_ID, CAT_ID)" +
                 "VALUES ('%s', %d, '" + new Date(System.currentTimeMillis()) + "', " +
