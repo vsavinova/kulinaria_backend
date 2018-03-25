@@ -18,9 +18,9 @@ import java.util.Map;
 
 // TODO: 19.03.18 Доделать поиск рецептов по ингридиентам (разобраться с массивом)
 
-@Service
+//@Service
 public class UserService {
-    @Autowired
+//    @Autowired
     private DBHelper dbHelper = new DBHelper();
 
     public User auth(String login, String hashpwd) {

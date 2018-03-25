@@ -19,8 +19,8 @@ import ru.hse.utils.Utils;
 
 @Controller
 public class MainController {
-    @Autowired
-    UserService userService;
+//    @Autowired
+    UserService userService = new UserService();
 
 //    @Autowired
 //    Config config;
