@@ -78,7 +78,7 @@ public class UserService {
                 String rec_name = resultSet.getString("rec_name");
 //                double rating = resultSet.getDouble("rating");
                 Date date = resultSet.getDate("publication_date");
-                Blob photo = resultSet.getBlob("photo");
+                String photo = resultSet.getString("photo");
                 String annotation = resultSet.getString("annotation");
                 Integer cooking_time = resultSet.getInt("time");
                 String nutr_val_name = resultSet.getString("nutr_val_name");
@@ -139,7 +139,7 @@ public class UserService {
                 String rec_name = resultSet.getString("rec_name");
                 String user_name = resultSet.getString("user_name");
                 Date date = resultSet.getDate("publication_date");
-                Blob photo = resultSet.getBlob("photo");
+                String photo = resultSet.getString("photo");
                 String annotation = resultSet.getString("annotation");
                 Integer cooking_time = resultSet.getInt("time");
                 String nutr_val_name = resultSet.getString("nutr_val_name");
@@ -244,7 +244,7 @@ public class UserService {
             }
         } else
             result = Utils.createError(Errors.INVALID_TOKEN.getMsg(), "");
-        return result;
+        return Utils.createSuccess(result);
     }
 
     public String updateInfo(UserInfo user) {

@@ -24,6 +24,14 @@ public class Utils {
         return jsonObject.toString();
     }
 
+    public static String createSuccess(String token, int userId) {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("result", "success");
+        jsonObject.put("token", token);
+        jsonObject.put("userId", userId);
+        return jsonObject.toString();
+    }
+
     public static String getToken(String jsonToken) {
         String[] split = jsonToken.split(":");
         String token = split[1];

@@ -126,7 +126,7 @@ public class MainController {
         User auth = userService.auth(user.getLogin(), user.getPassword());
         String token = null;
         if (auth != null)
-            token = Utils.createSuccess(TockenManager.getToken(auth));
+            token = Utils.createSuccess(TockenManager.getToken(auth), auth.getUserId());
         else
             token = Utils.createError("authentication failed", "").toString();
         return token;

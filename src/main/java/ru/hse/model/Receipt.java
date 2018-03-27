@@ -10,14 +10,14 @@ public class Receipt {
     private Date publicationDate;
     private String photo;
     private String annotation;
-    private Date time;
+    private Integer time;
     private int nutrId;
     private int catId;
     private List<Ingredient> ingredients;
     private List<Step> steps;
     private String token;
 
-    public Receipt(int recId, String recName, int userId, Date publicationDate, String photo, String annotation, Date time, int nutrId, int catId, List<Ingredient> ingredients, List<Step> steps, String token) {
+    public Receipt(int recId, String recName, int userId, Date publicationDate, String photo, String annotation, Integer time, int nutrId, int catId, List<Ingredient> ingredients, List<Step> steps, String token) {
         this.recId = recId;
         this.recName = recName;
         this.userId = userId;
@@ -83,11 +83,11 @@ public class Receipt {
         this.annotation = annotation;
     }
 
-    public Date getTime() {
+    public Integer getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(Integer time) {
         this.time = time;
     }
 

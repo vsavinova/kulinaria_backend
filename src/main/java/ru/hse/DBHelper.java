@@ -48,13 +48,13 @@ public class DBHelper {
                     " and r.NUTR_ID=nv.NUTR_ID and r.CAT_ID = cat.CAT_ID");
             while (resultSet.next()) {
                 String recName = resultSet.getString("REC_NAME");
-                Blob photo = resultSet.getBlob("PHOTO");
+                String photo = resultSet.getString("PHOTO");
                 Integer cooking_time = resultSet.getInt("TIME");
                 double rating = resultSet.getDouble("RATING");
                 String nutr_val_name = resultSet.getString("NUTR_VAL_NAME");
                 String category = resultSet.getString("CAT_NAME");
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("rec_name", recName);
+                jsonObject.put("recName", recName);
                 jsonObject.put("photo", photo);
                 jsonObject.put("time", cooking_time);
                 jsonObject.put("rating", rating);
@@ -165,14 +165,14 @@ public class DBHelper {
                 int rec_id = resultSet.getInt("rec_id");
                 double rating = getRating(rec_id); // TODO: 16.03.18 Переделать, чтобы в запросе получать рейтинг
                 String rec_name = resultSet.getString("rec_name");
-                Blob photo = resultSet.getBlob("receipt.photo");
+                String photo = resultSet.getString("r.photo");
                 String annotation = resultSet.getString("annotation");
                 Time cooking_time = resultSet.getTime("time");
                 String nutr_val_name = resultSet.getString("nutr_val_name");
 
                 JSONObject receipt = new JSONObject();
                 receipt.put("rec_id", rec_id);
-                receipt.put("rec_name", rec_name);
+                receipt.put("recName", rec_name);
                 receipt.put("rating", rating);
                 receipt.put("photo", photo);
                 receipt.put("annotation", annotation);
@@ -189,7 +189,7 @@ public class DBHelper {
 
     public String createReceipt(Receipt receipt) throws SQLException {
         String photo = receipt.getPhoto();
-        java.util.Date cooking_time = receipt.getTime();
+        Integer cooking_time = receipt.getTime();
         String statement1 = String.format("INSERT INTO RECEIPT (REC_NAME, USER_ID, PUBLICATION_DATE," +
                 "                     PHOTO, ANNOTATION, TIME, NUTR_ID, CAT_ID)" +
                 "VALUES ('%s', %d, '" + new Date(System.currentTimeMillis()) + "', " +
@@ -250,7 +250,7 @@ public class DBHelper {
 
             while (resultSet.next()) {
                 int step_id = resultSet.getInt("step_id");
-                Blob photo = resultSet.getBlob("photo");
+                String photo = resultSet.getString("photo");
                 String description = resultSet.getString("description");
 
                 JSONObject step = new JSONObject();

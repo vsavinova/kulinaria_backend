@@ -1172,7 +1172,7 @@ REC_ID</ColNames>
     </column>
     <column id="318" parent="38" name="PHOTO">
       <Position>5</Position>
-      <DataType>BLOB(max)|2004</DataType>
+      <DataType>VARCHAR(max)|12</DataType>
     </column>
     <column id="319" parent="38" name="ANNOTATION">
       <Position>6</Position>
@@ -1260,7 +1260,7 @@ REC_ID</ColNames>
     </column>
     <column id="334" parent="40" name="PHOTO">
       <Position>2</Position>
-      <DataType>BLOB(max)|2004</DataType>
+      <DataType>VARCHAR(max)|12</DataType>
     </column>
     <column id="335" parent="40" name="DESCRIPTION">
       <Position>3</Position>
