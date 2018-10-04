@@ -1,71 +1,62 @@
 package ru.hse;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.hse.model.Ingredient;
 import ru.hse.model.Receipt;
 import ru.hse.model.Step;
+import ru.hse.model.UserInfo;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 
 @Component
 public class DBHelper {
 
+    private DataSource dataSource;
     Connection connection;
 
-    public DBHelper() {
-        createConnection();
+
+    @Autowired
+    public DBHelper(DataSource dataSource) throws SQLException {
+        this.dataSource = dataSource;
+        this.connection = dataSource.getConnection();
     }
 
-    private void createConnection() {
-        try {
-            Class.forName("org.h2.Driver");
-            connection = DriverManager.
-                    getConnection("jdbc:h2:~/food", "admin", "admin");
-            System.out.println("Hello");
-        } catch (Exception e) {
-            e.printStackTrace();
+    public List<Receipt> getAllReceipts() throws SQLException {
+        List<Receipt> receipts = new ArrayList<>();
+        ResultSet resultSet = requestToDB("SELECT r.REC_NAME, r.PHOTO, " +
+                " r.TIME, sum(v.stars)/count(v.stars) as rating" +
+                ", nv.NUTR_VAL_NAME, cat.CAT_NAME" +
+                " from RECEIPT as r, VOTING as v, NUTRITIONAL_VALUE as nv, CATEGORY as cat" +
+                " WHERE r.rec_id = v.rec_id " +
+                " and r.NUTR_ID=nv.NUTR_ID and r.CAT_ID = cat.CAT_ID " +
+                " GROUP BY (REC_NAME) " +
+                " UNION SELECT r.REC_NAME, r.PHOTO, r.TIME, 0 as rating, nv.NUTR_VAL_NAME, " +
+                " cat.CAT_NAME from RECEIPT as r, VOTING as v, NUTRITIONAL_VALUE as nv, CATEGORY as cat" +
+                " WHERE r.REC_ID NOT IN (SELECT v.rec_id FROM VOTING as v)" +
+                " and r.NUTR_ID=nv.NUTR_ID and r.CAT_ID = cat.CAT_ID");
+        while (resultSet.next()) {
+            String recName = resultSet.getString("REC_NAME");
+            String photo = resultSet.getString("PHOTO");
+            Integer cooking_time = resultSet.getInt("TIME");
+            double rating = resultSet.getDouble("RATING");
+            String nutr_val_name = resultSet.getString("NUTR_VAL_NAME");
+            String category = resultSet.getString("CAT_NAME");
+            Receipt receipt = new Receipt();
+            receipt.setRecName(recName);
+            receipt.setPhoto(photo);
+            receipt.setTime(cooking_time);
+            receipt.setRating(rating);
+            receipt.setDifficulty(nutr_val_name);
+            receipt.setCategory(category);
+            receipts.add(receipt);
         }
-    }
-
-    public JSONArray getAllReceipts() {
-        JSONArray result = new JSONArray();
-        try {
-            ResultSet resultSet = requestToDB("SELECT r.REC_NAME, r.PHOTO, " +
-                    " r.TIME, sum(v.stars)/count(v.stars) as rating" +
-                    ", nv.NUTR_VAL_NAME, cat.CAT_NAME" +
-                    " from RECEIPT as r, VOTING as v, NUTRITIONAL_VALUE as nv, CATEGORY as cat" +
-                    " WHERE r.rec_id = v.rec_id " +
-                    " and r.NUTR_ID=nv.NUTR_ID and r.CAT_ID = cat.CAT_ID " +
-                    " GROUP BY (REC_NAME) " +
-                    " UNION SELECT r.REC_NAME, r.PHOTO, r.TIME, 0 as rating, nv.NUTR_VAL_NAME, " +
-                    " cat.CAT_NAME from RECEIPT as r, VOTING as v, NUTRITIONAL_VALUE as nv, CATEGORY as cat" +
-                    " WHERE r.REC_ID NOT IN (SELECT v.rec_id FROM VOTING as v)" +
-                    " and r.NUTR_ID=nv.NUTR_ID and r.CAT_ID = cat.CAT_ID");
-            while (resultSet.next()) {
-                String recName = resultSet.getString("REC_NAME");
-                String photo = resultSet.getString("PHOTO");
-                Integer cooking_time = resultSet.getInt("TIME");
-                double rating = resultSet.getDouble("RATING");
-                String nutr_val_name = resultSet.getString("NUTR_VAL_NAME");
-                String category = resultSet.getString("CAT_NAME");
-                JSONObject jsonObject = new JSONObject();
-                jsonObject.put("recName", recName);
-                jsonObject.put("photo", photo);
-                jsonObject.put("time", cooking_time);
-                jsonObject.put("rating", rating);
-                jsonObject.put("dificulty", nutr_val_name);
-                jsonObject.put("category", category);
-                result.put(jsonObject);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return result;
+        return receipts;
     }
 
     private int getReceptsCount(Integer userId) throws SQLException {
@@ -77,8 +68,8 @@ public class DBHelper {
             return 0;
     }
 
-    public JSONObject getUserInfo(Integer userId) {
-        JSONObject result = new JSONObject();
+    public UserInfo getUserInfo(Integer userId) {
+        UserInfo userInfo = new UserInfo();
         try {
             ResultSet resultSet = requestToDB(String.format("SELECT u.USER_NAME, u.PHOTO, u.BIO, " +
                             "u.REGISTRATION_DATE as rd from USER as u where u.USER_ID = %d",
@@ -88,17 +79,18 @@ public class DBHelper {
                 Blob userPhoto = resultSet.getBlob("photo");
                 String story = resultSet.getString("bio");
                 Date date = resultSet.getDate("rd");
-                result.put("user_name", name);
-                result.put("user_photo", userPhoto);
-                result.put("bio", story);
-                result.put("rd", date);
+                userInfo.setUserId(userId);
+                userInfo.setUserName(name);
+                userInfo.setPhoto(userPhoto);
+                userInfo.setBio(story);
+                userInfo.setRegistrationDate(date);
             }
             int receipts = getReceptsCount(userId);
-            result.put("receipts", receipts);
+            userInfo.setReceiptsCount(receipts);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return result;
+        return userInfo;
     }
 
     //    Получение рейтинга рецепта по id рецепта
@@ -139,8 +131,8 @@ public class DBHelper {
         return rec_ids;
     }
 
-    public JSONArray findReceipt(Integer ingrId, Integer cookTime, Integer nutrVal, String recName) {
-        JSONArray result = new JSONArray();
+    public List<Receipt> findReceipt(Integer ingrId, Integer cookTime, Integer nutrVal, String recName) {
+        ArrayList<Receipt> receipts = new ArrayList<>();
         try {
             String statement =
                     "Select r.REC_ID, r.REC_NAME, r.PHOTO, r.ANNOTATION, nv.NUTR_VAL_NAME, " +
@@ -167,34 +159,33 @@ public class DBHelper {
                 String rec_name = resultSet.getString("rec_name");
                 String photo = resultSet.getString("r.photo");
                 String annotation = resultSet.getString("annotation");
-                Time cooking_time = resultSet.getTime("time");
+                int cooking_time = resultSet.getInt("time");
                 String nutr_val_name = resultSet.getString("nutr_val_name");
 
-                JSONObject receipt = new JSONObject();
-                receipt.put("rec_id", rec_id);
-                receipt.put("recName", rec_name);
-                receipt.put("rating", rating);
-                receipt.put("photo", photo);
-                receipt.put("annotation", annotation);
-                receipt.put("time", cooking_time);
-                receipt.put("nutr_val_name", nutr_val_name);
-                receipt.put("time", cooking_time);
-                result.put(receipt);
+                Receipt receipt = new Receipt();
+                receipt.setRecName(rec_name);
+                receipt.setPhoto(photo);
+                receipt.setRecId(rec_id);
+                receipt.setRating(rating);
+                receipt.setTime(cooking_time);
+                receipt.setDifficulty(nutr_val_name);
+                receipt.setAnnotation(annotation);
+                receipts.add(receipt);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return result;
+        return receipts;
     }
 
-    public String createReceipt(Receipt receipt) throws SQLException {
+    public int createReceipt(Receipt receipt) throws SQLException {
         String photo = receipt.getPhoto();
         Integer cooking_time = receipt.getTime();
         String statement1 = String.format("INSERT INTO RECEIPT (REC_NAME, USER_ID, PUBLICATION_DATE," +
-                "                     PHOTO, ANNOTATION, TIME, NUTR_ID, CAT_ID)" +
-                "VALUES ('%s', %d, '" + new Date(System.currentTimeMillis()) + "', " +
-                        (photo == null ? null : "'" + photo + "'") +  ", '%s', "
-                + (cooking_time == null ? null : "'" + cooking_time + "'") + ", %d, %d)",
+                        "                     PHOTO, ANNOTATION, TIME, NUTR_ID, CAT_ID)" +
+                        "VALUES ('%s', %d, '" + new Date(System.currentTimeMillis()) + "', " +
+                        (photo == null ? null : "'" + photo + "'") + ", '%s', "
+                        + (cooking_time == null ? null : "'" + cooking_time + "'") + ", %d, %d)",
                 receipt.getRecName(), receipt.getUserId(),
                 receipt.getAnnotation(), receipt.getNutrId(), receipt.getCatId());
         PreparedStatement preparedStatement = connection.prepareStatement(statement1);
@@ -204,22 +195,22 @@ public class DBHelper {
             int recId = resultSet.getInt(1);
             for (Ingredient ingredient : receipt.getIngredients()) {
                 String statement2 = String.format(Locale.US, "INSERT INTO RECEIPT_DETAILS (REC_ID, INGR_ID, " +
-                        "COUNT, UNIT) VALUES (%d, %d, %f, '%s')", recId, ingredient.getIngrId(),
+                                "COUNT, UNIT) VALUES (%d, %d, %f, '%s')", recId, ingredient.getIngrId(),
                         ingredient.getCount(), ingredient.getUnit());
                 preparedStatement = connection.prepareStatement(statement2);
                 preparedStatement.execute();
             }
             for (Step step : receipt.getSteps()) {
                 String statement3 = String.format("INSERT INTO STEPS (PHOTO, DESCRIPTION, REC_ID) " +
-                        "VALUES ('%s', '%s', %d)", step.getPhoto(), step.getDescription(),
+                                "VALUES ('%s', '%s', %d)", step.getPhoto(), step.getDescription(),
                         recId);
                 preparedStatement = connection.prepareStatement(statement3);
                 preparedStatement.execute();
             }
             connection.commit();
         } else
-            return "error";
-        return "success";
+            return -1;
+        return 0;
     }
 
     public ResultSet requestToDB(String statement) throws SQLException {
@@ -242,8 +233,8 @@ public class DBHelper {
         return resultSet;
     }
 
-    private JSONArray getSteps(Integer recId) {
-        JSONArray result = new JSONArray();
+    private List<Step> getSteps(Integer recId) {
+        ArrayList<Step> steps = new ArrayList<>();
         try {
             ResultSet resultSet = requestToDB("Select s.STEP_ID, s.PHOTO, s.DESCRIPTION " +
                     " from STEPS as s where s.REC_ID = " + recId);
@@ -253,21 +244,21 @@ public class DBHelper {
                 String photo = resultSet.getString("photo");
                 String description = resultSet.getString("description");
 
-                JSONObject step = new JSONObject();
-                step.put("photo", photo);
-                step.put("step_id", step_id);
-                step.put("description", description);
-                result.put(step);
+                Step step = new Step();
+                step.setPhoto(photo);
+                step.setDescription(description);
+                step.setStepId(step_id);
+                steps.add(step);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return result;
+        return steps;
     }
 
     //    Список ингридентов в рецете с кол-вом и еденицами измерения
-    private JSONArray getDetailsOfReceipt(Integer recId) {
-        JSONArray result = new JSONArray();
+    private List<Ingredient> getDetailsOfReceipt(Integer recId) {
+        ArrayList<Ingredient> ingredients = new ArrayList<>();
         try {
             ResultSet resultSet = requestToDB("SELECT rd.INGR_ID, rd.UNIT, " +
                     "rd.COUNT, i.ING_NAME FROM RECEIPT_DETAILS as rd, INGREDIENT as i " +
@@ -279,69 +270,25 @@ public class DBHelper {
                 String unit = resultSet.getString("unit");
                 double count = resultSet.getDouble("count");
 
-                JSONObject ingrInReceipt = new JSONObject();
-                ingrInReceipt.put("unit", unit);
-                ingrInReceipt.put("ingr_id", inr_id);
-                ingrInReceipt.put("ing_name", ign_name);
-                ingrInReceipt.put("count", count);
-                result.put(ingrInReceipt);
+                Ingredient ingredient = new Ingredient();
+                ingredient.setUnit(unit);
+                ingredient.setIngrId(inr_id);
+                ingredient.setIgnName(ign_name);
+                ingredient.setCount(count);
+                ingredients.add(ingredient);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return result;
+        return ingredients;
     }
 
-    public JSONObject getReceiptDetails(Integer recId) {
-        JSONObject receiptInDetails = new JSONObject();
-        receiptInDetails.put("steps", getSteps(recId));
-        receiptInDetails.put("ingredients", getDetailsOfReceipt(recId));
-        return receiptInDetails;
+    public Receipt getReceiptDetails(Integer recId) {
+        Receipt receipt = new Receipt();
+        receipt.setRecId(recId);
+        receipt.setSteps(getSteps(recId));
+        receipt.setIngredients(getDetailsOfReceipt(recId));
+        return receipt;
     }
-
-//    public JSONObject getReceiptDetails(Integer recId) {
-//        JSONObject result = new JSONObject();
-//        try {
-//            ResultSet resultSet = requestToDB("Select * from RECEIPT, RECEIPT_DETAILS, INGREDIENT, STEPS" +
-//                    " where RECEIPT.REC_ID = RECEIPT_DETAILS.REC_ID and INGREDIENT.INGR_ID = RECEIPT_DETAILS.INGR_ID" +
-//                    " and RECEIPT.REC_ID = STEPS.REC_ID and RECEIPT.REC_ID = " + recId);
-//            if (!resultSet.next())
-//                return result;
-//            result.put("rec_id", resultSet.getInt("RECEIPT.REC_ID"));
-//            result.put("rec_name", resultSet.getString("REC_NAME"));
-////            result.put("rating", resultSet.getInt("RATING"));
-//            result.put("date", resultSet.getDate("PUBLICATION_DATE"));
-//            JSONArray steps = new JSONArray();
-//            JSONObject step = new JSONObject();
-//            step.put("step_id", resultSet.getInt("STEP_ID"));
-//            step.put("description", resultSet.getString("DESCRIPTION"));
-//            steps.put(step);
-//            result.put("steps", steps);
-//
-//            JSONArray ingredients = new JSONArray();
-//            JSONObject ingredient = new JSONObject();
-//            ingredient.put("name", resultSet.getString("ING_NAME"));
-//            ingredient.put("count", resultSet.getDouble("COUNT"));
-//            ingredient.put("unit", resultSet.getString("UNIT"));
-//            ingredients.put(ingredient);
-//            result.put("ingredients", ingredients);
-//            while (resultSet.next()) {
-//                step = new JSONObject();
-//                step.put("step_id", resultSet.getInt("STEP_ID"));
-//                step.put("description", resultSet.getString("DESCRIPTION"));
-//                steps.put(step);
-//                ingredient = new JSONObject();
-//                ingredient.put("name", resultSet.getString("ING_NAME"));
-//                ingredient.put("count", resultSet.getDouble("COUNT"));
-//                ingredient.put("unit", resultSet.getString("UNIT"));
-//                ingredients.put(ingredient);
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return result;
-//    }
-
-
 
 }

@@ -10,14 +10,16 @@ public class UserInfo {
     private Date registrationDate;
     private String bio;
     private String token;
+    private int receiptsCount;
 
-    public UserInfo(int userId, String userName, Blob photo, Date registrationDate, String bio, String token) {
+    public UserInfo(int userId, String userName, Blob photo, Date registrationDate, String bio, String token, int receiptsCount) {
         this.userId = userId;
         this.userName = userName;
         this.photo = photo;
         this.registrationDate = registrationDate;
         this.bio = bio;
         this.token = token;
+        this.receiptsCount = receiptsCount;
     }
 
     public UserInfo() {
@@ -69,5 +71,13 @@ public class UserInfo {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public int getReceiptsCount() {
+        return receiptsCount;
+    }
+
+    public void setReceiptsCount(int receiptsCount) {
+        this.receiptsCount = receiptsCount;
     }
 }

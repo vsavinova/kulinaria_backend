@@ -9,10 +9,9 @@ public class User {
 
     }
 
-    public User(String login, String password, int userId) {
+    public User(String login, String password) {
         this.login = login;
         this.password = password;
-        this.userId = userId;
     }
     public String getLogin() {
         return login;

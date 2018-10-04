@@ -24,9 +24,8 @@ public class Client {
                 new BasicNameValuePair("pwd", "qwerty123")
         );
         post.setEntity(new UrlEncodedFormEntity(data));
-        CloseableHttpResponse response2 = httpclient.execute(post);
 
-        try {
+        try (CloseableHttpResponse response2 = httpclient.execute(post)) {
             System.out.println(response2.getStatusLine());
             HttpEntity entity2 = response2.getEntity();
             // do something useful with the response body
@@ -34,8 +33,6 @@ public class Client {
             EntityUtils.consume(entity2);
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            response2.close();
         }
     }
 }

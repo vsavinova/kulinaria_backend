@@ -5,11 +5,12 @@ ru/hse/model/User.class
 ru/hse/service/UserService.class
 ru/hse/rest/MainController.class
 ru/hse/DBStarter.class
-ru/hse/Config.class
 ru/hse/model/UserInfo.class
 ru/hse/model/Receipt.class
 ru/hse/model/Ingredient.class
+ru/hse/Facade.class
+ru/hse/service/TokenService.class
+ru/hse/Facade$Impl.class
 ru/hse/test_responses/Client.class
-ru/hse/service/TockenManager.class
 ru/hse/utils/Errors.class
 ru/hse/model/Voting.class

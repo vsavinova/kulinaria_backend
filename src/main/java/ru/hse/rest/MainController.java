@@ -1,197 +1,114 @@
 package ru.hse.rest;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import ru.hse.Config;
-import ru.hse.DBHelper;
+import ru.hse.Facade;
 import ru.hse.model.Receipt;
 import ru.hse.model.User;
 import ru.hse.model.UserInfo;
 import ru.hse.model.Voting;
-import ru.hse.service.TockenManager;
-import ru.hse.service.UserService;
-import ru.hse.utils.Errors;
-import ru.hse.utils.Utils;
 
-@Controller
+import java.util.Map;
+
+@RestController
 public class MainController {
+
     @Autowired
-    UserService userService;
+    Facade facade;
 
-//    @Autowired
-//    Config config;
-
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
-    @ResponseBody
+    @GetMapping(value = "/test")
     public String test() {
         return "hello";
     }
 
-    @RequestMapping(value = "/get_receipts", method = RequestMethod.GET)
-    @ResponseBody
-    public String getReceipts() {
-        DBHelper helper = userService.getHelper();
-        JSONArray allReceipts = helper.getAllReceipts();
-        return allReceipts.toString();
+    @GetMapping(value = "/get_receipts", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> getReceipts() {
+        return facade.getReceipts();
     }
 
 
-    @RequestMapping(value = "/get_receipts_by_user", method = RequestMethod.GET)
-    @ResponseBody
-    public String getReceiptsByUser(@RequestParam(name = "user_id") Integer userId) {
-        JSONArray allReceipts = userService.getUserReceipts(userId);
-        return allReceipts.toString();
+    @GetMapping(value = "/get_receipts_by_user", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> getReceiptsByUser(@RequestParam(name = "user_id") Integer userId) {
+        return facade.getReceiptsByUser(userId);
     }
-
-//    @RequestMapping(value = "/get_favorite_by_user", method = RequestMethod.GET)
-//    @ResponseBody
-//    public String getFavoriteByUser(@RequestParam(name = "user_id") Integer userId) {
-//        DBHelper helper = userService.getHelper();
-//        JSONArray favorite = helper.getFavoriteByUserId(userId);
-//        return favorite.toString();
-//    }
-
 
     @PostMapping(value = "/get_favorite_by_user",
             consumes = "application/json",
-            produces = "application/json")
-    @ResponseBody
-    public String getFavoriteByUser(@RequestParam(name = "user_id") Integer userId,
-                                    @RequestBody String token) {
-//        String tokenString = token.substring(token.lastIndexOf(":") + 1);
-//        if (tokenString.contains(" "))
-//            tokenString = tokenString.replace(" ", "");
-        token = Utils.getToken(token);
-        boolean checkToken = TockenManager.checkToken(token, userId);
-        if (!checkToken)
-            return Utils.createError(Errors.INVALID_TOKEN.getMsg(), "").toString();
-//        DBHelper helper = userService.getHelper();
-        JSONArray favorite = userService.getFavoriteByUserId(userId);
-        return favorite.toString();
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> getFavoriteByUser(@RequestParam(name = "user_id") Integer userId,
+                                                 @RequestBody String token) {
+        return facade.getFavoriteByUser(userId, token);
     }
 
 
     @PostMapping(value = "/add_favorite_to_user",
             consumes = "application/json",
-            produces = "application/json")
-    @ResponseBody
-    public String addFavoriteToUser(@RequestParam(name = "user_id") Integer userId,
-                                    @RequestParam(name = "rec_id") Integer recId,
-                                    @RequestBody String token) {
-        return userService.addFavoriteBToUser(token, userId, recId);
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> addFavoriteToUser(@RequestParam(name = "user_id") Integer userId,
+                                                 @RequestParam(name = "rec_id") Integer recId,
+                                                 @RequestBody String token) {
+        return facade.addFavoriteToUser(userId, recId, token);
     }
 
-    @RequestMapping(value = "/get_user_info", method = RequestMethod.GET,
-            produces = "application/json;charset=utf-8")
-    @ResponseBody
-    public String getUserInfo(@RequestParam(name = "user_id") Integer userId) {
-        DBHelper helper = userService.getHelper();
-        JSONObject userInfo = helper.getUserInfo(userId);
-        return userInfo.toString();
+    @GetMapping(value = "/get_user_info", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> getUserInfo(@RequestParam(name = "user_id") Integer userId) {
+        return facade.getUserInfo(userId);
     }
 
-    @RequestMapping(value = "/get_receipt_details", method = RequestMethod.GET, produces = "text/plain;charset=UTF-8")
-    @ResponseBody
-    public String getReceiptDetailsByRecId(@RequestParam(name = "rec_id") Integer recId) {
-        DBHelper helper = userService.getHelper();
-        JSONObject receipt = helper.getReceiptDetails(recId);
-        return receipt.toString();
+    @GetMapping(value = "/get_receipt_details", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> getReceiptDetailsByRecId(@RequestParam(name = "rec_id") Integer recId) {
+        return facade.getReceiptDetailsByRecId(recId);
     }
 
 
-    @RequestMapping(value = "/find_receipts", method = RequestMethod.GET)
-    @ResponseBody
-    public String findReceipts(
+    @GetMapping(value = "/find_receipts", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> findReceipts(
             @RequestParam(name = "ingr_id", required = false) Integer ingrId,
             @RequestParam(name = "cook_time", required = false) Integer cookTime,
             @RequestParam(name = "nutr_val", required = false) Integer nutrVal,
             @RequestParam(name = "rec_name", required = false) String recName
     ) {
-        DBHelper helper = userService.getHelper();
-        JSONArray receipts = helper.findReceipt(ingrId, cookTime, nutrVal, recName);
-        return receipts.toString();
+        return facade.findReceipts(ingrId, cookTime, nutrVal, recName);
     }
 
 
     @PostMapping(value = "/auth",
             consumes = "application/json",
-            produces = "application/json")
-    @ResponseBody
-    // возвращает токен, если успешно
-    public String auth(@RequestBody User user) {
-        User auth = userService.auth(user.getLogin(), user.getPassword());
-        String token = null;
-        if (auth != null)
-            token = Utils.createSuccess(TockenManager.getToken(auth), auth.getUserId());
-        else
-            token = Utils.createError("authentication failed", "").toString();
-        return token;
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> auth(@RequestBody User user) {
+        return facade.auth(user);
     }
 
 
     @PostMapping(value = "/register",
             consumes = "application/json",
-            produces = "application/json")
-    @ResponseBody
-    // возвращает токен, если успешно
-    public String register(@RequestBody User user) {
-        return userService.register(user.getLogin(), user.getPassword());
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> register(@RequestBody User user) {
+        return facade.register(user);
     }
 
 
     @PostMapping(value = "/addUserInfo",
             consumes = "application/json",
-            produces = "application/json")
-    @ResponseBody
-    // возвращает токен, если успешно
-    public String addUserInfo(@RequestBody UserInfo userInfo) {
-        return userService.addUserInfo(userInfo);
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> addUserInfo(@RequestBody UserInfo userInfo) {
+        return facade.addUserInfo(userInfo);
     }
 
     @PostMapping(value = "/add_mark_to_receipt",
             consumes = "application/json",
-            produces = "application/json")
-    @ResponseBody
-    // возвращает токен, если успешно
-    public String addMarksToReceipt(@RequestBody Voting voting) {
-        return userService.addMark(voting);
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> addMarksToReceipt(@RequestBody Voting voting) {
+        return facade.addMark(voting);
     }
 
 
     @PostMapping(value = "/create_receipt",
             consumes = "application/json",
-            produces = "application/json")
-    @ResponseBody
-    // возвращает токен, если успешно
-    public String createReceipt(@RequestBody Receipt receipt) {
-        return userService.createReceipt(receipt);
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Map<String, Object> createReceipt(@RequestBody Receipt receipt) {
+        return facade.createReceipt(receipt);
     }
-
-
-    @PostMapping(value = "/update_user_info",
-            consumes = "application/json",
-            produces = "application/json")
-    @ResponseBody
-    // возвращает токен, если успешно
-    public String updateUserInfo(@RequestBody UserInfo user) {
-        return userService.updateInfo(user);
-    }
-
-
-
-
-//    @PostMapping(value = "/auth",
-//            consumes = "application/json",
-//            produces = "application/json")
-//    @ResponseBody
-//    // возвращает токен, если успешно
-//    public User auth(@RequestBody User user) {
-//        User auth = userService.auth(user.getLogin(), user.getPassword());
-//        return auth;
-//    }
 
 }

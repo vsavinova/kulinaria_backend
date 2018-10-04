@@ -11,13 +11,16 @@ public class Receipt {
     private String photo;
     private String annotation;
     private Integer time;
+    private String difficulty;
+    private String category;
+    private double rating;
     private int nutrId;
     private int catId;
     private List<Ingredient> ingredients;
     private List<Step> steps;
     private String token;
 
-    public Receipt(int recId, String recName, int userId, Date publicationDate, String photo, String annotation, Integer time, int nutrId, int catId, List<Ingredient> ingredients, List<Step> steps, String token) {
+    public Receipt(int recId, String recName, int userId, Date publicationDate, String photo, String annotation, Integer time, double rating, int nutrId, int catId, List<Ingredient> ingredients, List<Step> steps, String token) {
         this.recId = recId;
         this.recName = recName;
         this.userId = userId;
@@ -25,6 +28,7 @@ public class Receipt {
         this.photo = photo;
         this.annotation = annotation;
         this.time = time;
+        this.rating = rating;
         this.nutrId = nutrId;
         this.catId = catId;
         this.ingredients = ingredients;
@@ -129,5 +133,29 @@ public class Receipt {
 
     public void setSteps(List<Step> steps) {
         this.steps = steps;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public void setDifficulty(String difficulty) {
+        this.difficulty = difficulty;
+    }
+
+    public String getDifficulty() {
+        return difficulty;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return category;
     }
 }

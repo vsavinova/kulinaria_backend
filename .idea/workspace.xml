@@ -7,26 +7,48 @@
   </component>
   <component name="ChangeListManager">
     <list id="4eb5a53a-8771-4b1c-96d2-44e1cd20d33f" name="Revert &quot;Create .gitignore&quot; This reverts commit 0fe41ab" comment="Revert &quot;Create .gitignore&quot;&#10;&#10;This reverts commit 0fe41ab" />
-    <list default="true" id="36288df8-1eeb-4d31-b750-0cc63dbd7f24" name="Default" comment="Изменения в запросах">
+    <list default="true" id="36288df8-1eeb-4d31-b750-0cc63dbd7f24" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/DBConfiguration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/Facade.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/service/CommonService.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/Config.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/hse/Config.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/hse/service/TockenManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/service/TockenManager.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/service/TockenManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/service/TokenService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/hse/DBHelper.class" afterPath="$PROJECT_DIR$/target/classes/ru/hse/DBHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/hse/model/Receipt.class" afterPath="$PROJECT_DIR$/target/classes/ru/hse/model/Receipt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/hse/model/User.class" afterPath="$PROJECT_DIR$/target/classes/ru/hse/model/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/hse/rest/MainController.class" afterPath="$PROJECT_DIR$/target/classes/ru/hse/rest/MainController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/hse/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/ru/hse/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/hse/test_responses/Client.class" afterPath="$PROJECT_DIR$/target/classes/ru/hse/test_responses/Client.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/hse/utils/Errors.class" afterPath="$PROJECT_DIR$/target/classes/ru/hse/utils/Errors.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/hse/utils/Utils.class" afterPath="$PROJECT_DIR$/target/classes/ru/hse/utils/Utils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0.war" afterPath="$PROJECT_DIR$/target/ios-food-1.0.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/DBHelper.class" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/DBHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/model/Receipt.class" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/model/Receipt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/model/User.class" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/model/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/rest/MainController.class" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/rest/MainController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/service/UserService.class" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/test_responses/Client.class" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/test_responses/Client.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/utils/Errors.class" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/utils/Errors.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/utils/Utils.class" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/classes/ru/hse/utils/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d32f4d9b-6179-44cf-a312-db5076522e81.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d32f4d9b-6179-44cf-a312-db5076522e81.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/iosfood_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/iosfood_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iosfood.iml" afterPath="$PROJECT_DIR$/iosfood.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/DBHelper.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/DBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/model/Receipt.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/model/Receipt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/model/UserInfo.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/model/UserInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/test_responses/Client.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/test_responses/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/utils/Errors.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/utils/Errors.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/hse/utils/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/ru/hse/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ios-food-1.0/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,6 +95,13 @@
         <item name="food" type="e3449647:DbNodeDescriptor" />
         <item name="FOOD" type="e3449647:DbNodeDescriptor" />
         <item name="PUBLIC" type="e3449647:DbNodeDescriptor" />
+        <item name="NUTRITIONAL_VALUE" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="food" type="e3449647:DbNodeDescriptor" />
+        <item name="FOOD" type="e3449647:DbNodeDescriptor" />
+        <item name="PUBLIC" type="e3449647:DbNodeDescriptor" />
         <item name="RECEIPT_DETAILS" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
@@ -82,16 +111,30 @@
         <item name="PUBLIC" type="e3449647:DbNodeDescriptor" />
         <item name="STEPS" type="e3449647:DbNodeDescriptor" />
       </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="food" type="e3449647:DbNodeDescriptor" />
+        <item name="FOOD" type="e3449647:DbNodeDescriptor" />
+        <item name="PUBLIC" type="e3449647:DbNodeDescriptor" />
+        <item name="USER" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="food" type="e3449647:DbNodeDescriptor" />
+        <item name="FOOD" type="e3449647:DbNodeDescriptor" />
+        <item name="PUBLIC" type="e3449647:DbNodeDescriptor" />
+        <item name="USER_PRIVATE" type="e3449647:DbNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+            <state relative-caret-position="287">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,12 +142,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TockenManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/service/TockenManager.java">
+      <file leaf-file-name="Facade.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/Facade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="175">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3037#3038#0" expanded="true" />
+                <element signature="e#3099#3100#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,9 +159,40 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding>
+                <element signature="e#1340#1341#0" expanded="true" />
+                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="e#1607#1608#0" expanded="true" />
+                <element signature="e#1643#1644#0" expanded="true" />
+                <element signature="e#1698#1699#0" expanded="true" />
+                <element signature="e#1748#1749#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/service/CommonService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="33" column="59" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,11 +200,32 @@
       <file leaf-file-name="Receipt.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/Receipt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="-886">
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2203#2204#0" expanded="true" />
+                <element signature="e#2235#2236#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Voting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/Voting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,30 +233,12 @@
       <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/DBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5287">
-              <caret line="313" column="48" lean-forward="false" selection-start-line="313" selection-start-column="48" selection-end-line="313" selection-end-column="48" />
+            <state relative-caret-position="175">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1522066540000" expanded="true" signature="7995:8174" ph="INSERT INTO RECEIPT... " />
+                <marker date="1538659034744" expanded="true" signature="7666:7861" ph="INSERT INTO RECEIPT... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RECEIPT" pinned="false" current-in-tab="false">
-        <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.RECEIPT">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="STEPS" pinned="false" current-in-tab="true">
-        <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.STEPS">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -172,22 +253,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d32f4d9b-6179-44cf-a312-db5076522e81/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5525">
-              <caret line="325" column="75" lean-forward="false" selection-start-line="325" selection-start-column="75" selection-end-line="325" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Kotlin File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -202,6 +275,13 @@
       <find>cook</find>
       <find>blob</find>
       <find>rec_name</find>
+      <find>close(</find>
+      <find>getUserIn</find>
+      <find>find</find>
+      <find>TokenSer</find>
+      <find>byRe</find>
+      <find>regi</find>
+      <find>connection</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -222,12 +302,11 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response15.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response56.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/80e7d2c8-faee-493b-985e-81b9fa42cc0d/console.sql" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/response.json" />
@@ -237,24 +316,32 @@
         <option value="$PROJECT_DIR$/src/main/resources/response_examples/user_receipts" />
         <option value="$PROJECT_DIR$/src/main/resources/response_examples/finder.json" />
         <option value="$PROJECT_DIR$/src/main/resources/response_examples/finder_by_ingr.json" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/hse/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/utils/Errors.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/service/TockenManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/Voting.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/Step.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/hse/service/ReceiptService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/test_responses/Client.java" />
         <option value="$PROJECT_DIR$/src/main/resources/rr" />
         <option value="$PROJECT_DIR$/src/main/java/ru/hse/DBStarter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/Receipt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/hse/service/UserService.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d32f4d9b-6179-44cf-a312-db5076522e81/console.sql" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/Test.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/service/TockenManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/service/TockenService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/test_responses/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/User.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/DBConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/utils/Errors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/Receipt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/service/CommonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/model/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/Facade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/service/TokenService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/hse/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/hse/DBHelper.java" />
       </list>
     </option>
@@ -296,10 +383,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -317,7 +402,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -416,11 +501,6 @@
             <path>
               <item name="iosfood" type="b2602c69:ProjectViewProjectNode" />
               <item name="iosfood" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iosfood" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iosfood" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -433,7 +513,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,22 +525,665 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/victoria/Library/Preferences/IntelliJIdea2017.2/consoles/db/d32f4d9b-6179-44cf-a312-db5076522e81/console.sql&#10;HttpEnt&#9;PSI&#9;JAVA://org.apache.http.HttpEntity" />
+    <property name="SearchEverywhereHistoryKey" value="Con&#9;FILE&#9;file:///Users/victoria/IdeaProjects/iosfood/src/main/java/ru/hse/rest/MainController.java&#10;DB&#9;FILE&#9;file:///Users/victoria/IdeaProjects/iosfood/src/main/java/ru/hse/DBHelper.java&#10;DbSt&#9;FILE&#9;file:///Users/victoria/IdeaProjects/iosfood/src/main/java/ru/hse/DBStarter.java&#10;AutoCLos&#9;PSI&#9;JAVA://java.lang.AutoCloseable&#10;HttpEnt&#9;PSI&#9;JAVA://org.apache.http.HttpEntity" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/response_examples" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.hse.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/response_examples" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="{ &quot;login&quot;:&quot;vsava&quot;, &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_user_info" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;login&quot;:&quot;vsava&quot;, &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_user_info" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="34" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;login&quot;:&quot;vsava&quot;, &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_user_info" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="33" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{ &quot;login&quot;:&quot;vsava&quot;, &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_favorite_by_user" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY5NDMzMTI3Nzc0NiwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6MSwidG9rZW5fY3JlYXRlX2RhdGUiOjE1Mzg2NTc2Nzc3NDZ9.es-d4gfOY_FnMkoJhVM1Xl577mKHaUGBTKblf-Gn656Pz5SSzQFmK94nLqKAyJgD9SQCUsnhmCOQ-xUc4IzwYQ&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_favorite_by_user" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY5NDMzMTI3Nzc0NiwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6MSwidG9rZW5fY3JlYXRlX2RhdGUiOjE1Mzg2NTc2Nzc3NDZ9.es-d4gfOY_FnMkoJhVM1Xl577mKHaUGBTKblf-Gn656Pz5SSzQFmK94nLqKAyJgD9SQCUsnhmCOQ-xUc4IzwYQ" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY5NDMzMTI3Nzc0NiwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6MSwidG9rZW5fY3JlYXRlX2RhdGUiOjE1Mzg2NTc2Nzc3NDZ9.es-d4gfOY_FnMkoJhVM1Xl577mKHaUGBTKblf-Gn656Pz5SSzQFmK94nLqKAyJgD9SQCUsnhmCOQ-xUc4IzwYQ&quot;,   &quot;user_id&quot;:1 } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/getFavoriteByUser" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY5NDMzMTI3Nzc0NiwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6MSwidG9rZW5fY3JlYXRlX2RhdGUiOjE1Mzg2NTc2Nzc3NDZ9.es-d4gfOY_FnMkoJhVM1Xl577mKHaUGBTKblf-Gn656Pz5SSzQFmK94nLqKAyJgD9SQCUsnhmCOQ-xUc4IzwYQ" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY5NDMzMTI3Nzc0NiwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6MSwidG9rZW5fY3JlYXRlX2RhdGUiOjE1Mzg2NTc2Nzc3NDZ9.es-d4gfOY_FnMkoJhVM1Xl577mKHaUGBTKblf-Gn656Pz5SSzQFmK94nLqKAyJgD9SQCUsnhmCOQ-xUc4IzwYQ&quot;,   &quot;user_id&quot;:1 } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/getFavoriteByUser" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY5NDMzMTI3Nzc0NiwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6MSwidG9rZW5fY3JlYXRlX2RhdGUiOjE1Mzg2NTc2Nzc3NDZ9.es-d4gfOY_FnMkoJhVM1Xl577mKHaUGBTKblf-Gn656Pz5SSzQFmK94nLqKAyJgD9SQCUsnhmCOQ-xUc4IzwYQ" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/auth" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="99" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts_by_user" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="99" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts_by_user" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="9" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts_by_user" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="34" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts_by_user" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="33" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts_by_user" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts_by_user" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="userId" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/get_receipts" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/test" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Accept-Charset" />
+                <option name="value" value="utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="{   &quot;login&quot;:&quot;vsava&quot;,   &quot;password&quot;:&quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; } " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8080" />
@@ -1390,486 +2113,6 @@
           <option name="textToSend" value="{&quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY3Njk5MTc3MzM2MiwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6IjEiLCJ0b2tlbl9jcmVhdGVfZGF0ZSI6MTUyMTMxODE3MzM2Mn0.4hxgbxFFIQt3kXpDtlxFz9UzbWtS8v29lfuUvW3T48dfJ5nhXwLgZkiXwQ1cfp3xJn-5nKZ097sQG_dHgvC5ow&quot;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;login&quot;:&quot;vsava&quot;, &quot;password&quot;: &quot;3fc0a7acf087f549ac2b266baf94b8b1&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;login&quot;:&quot;vsava&quot;, &quot;password&quot;: &quot;qwerty123&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/get_favorite_by_user" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="user_id" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY3Njk4OTE4NTMwNCwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6IjEiLCJ0b2tlbl9jcmVhdGVfZGF0ZSI6MTUyMTMxNTU4NTMwNH0.nYWvQoyvE3cNeAqjYzrtcjDcZvMueQ1vnc_Kh6U_OrMAsBygCQ_JGV9RmBM_IgxmRwhX6pMv12O1MxkuOaqI9w&quot;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/get_favorite_by_user" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="user_id" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="&quot;eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY3Njk4OTE4NTMwNCwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6IjEiLCJ0b2tlbl9jcmVhdGVfZGF0ZSI6MTUyMTMxNTU4NTMwNH0.nYWvQoyvE3cNeAqjYzrtcjDcZvMueQ1vnc_Kh6U_OrMAsBygCQ_JGV9RmBM_IgxmRwhX6pMv12O1MxkuOaqI9w&quot;" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/get_favorite_by_user" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="user_id" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{ &quot;token&quot;: &quot;eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoidXNlciIsInRva2VuX2V4cGlyYXRpb25fZGF0ZSI6NDY3Njk4OTE4NTMwNCwibG9naW4iOiJ2c2F2YSIsInVzZXJJZCI6IjEiLCJ0b2tlbl9jcmVhdGVfZGF0ZSI6MTUyMTMxNTU4NTMwNH0.nYWvQoyvE3cNeAqjYzrtcjDcZvMueQ1vnc_Kh6U_OrMAsBygCQ_JGV9RmBM_IgxmRwhX6pMv12O1MxkuOaqI9w&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{ &quot;login&quot;: &quot;vsava&quot;,  &quot;password&quot;: &quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{ &quot;login&quot;: &quot;vsava&quot;,  &quot;password&quot;: &quot;3fc0a7acf087f549ac2b266baf94b8b1&quot; }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{ login: vsava, password: 3fc0a7acf087f549ac2b266baf94b8b1 }" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="login" />
-                <option name="value" value="vsava" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="pwd=3fc0a7acf087f549ac2b266baf94b8b1" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="login" />
-                <option name="value" value="vsava" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="pwd" />
-                <option name="value" value="3fc0a7acf087f549ac2b266baf94b8b1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="login" />
-                <option name="value" value="vsava" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="pwd" />
-                <option name="value" value="blob1: X'3fc0a7acf087f549ac2b266baf94b8b1'" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="login" />
-                <option name="value" value="vsava" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="pwd" />
-                <option name="value" value="blob5: X'" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="login=vsav" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="login=vsava&amp;pwd=jjj" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="login=vsava&amp;pwd=blob5+X'3fc0a7acf087f549ac2b266baf94b8b1'" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="login:vsava pwd:blob5: X'3fc0a7acf087f549ac2b266baf94b8b1'" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="login=vsava&amp;pwd=blob5: X'3fc0a7acf087f549ac2b266baf94b8b1'" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="/auth" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="login" />
-                <option name="value" value="vsava" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="pwd" />
-                <option name="value" value="blob4: X'3fc0a7acf087f549ac2b266baf94b8b1'" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -2048,6 +2291,41 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration name="server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M26" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -2158,7 +2436,12 @@
       <workItem from="1521920017330" duration="730000" />
       <workItem from="1521921553263" duration="707000" />
       <workItem from="1521955321057" duration="15390000" />
-      <workItem from="1522149518195" duration="16000" />
+      <workItem from="1522149518195" duration="115000" />
+      <workItem from="1522237907622" duration="197000" />
+      <workItem from="1522326163461" duration="597000" />
+      <workItem from="1534853507409" duration="490000" />
+      <workItem from="1538316569275" duration="402000" />
+      <workItem from="1538375111754" duration="18364000" />
     </task>
     <task id="LOCAL-00001" summary="Небольшие изменения в класса Рецепт (вместо Time cooking_time Integer time) и поправлен запрос на получение всех рецептов (для рецептов, за каоторые еще не голосовали, возвращает 0)">
       <created>1521959017100</created>
@@ -2181,11 +2464,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522006669456</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Финальная версия">
+      <created>1522149579875</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522149579875</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104748000" />
+    <option name="totallyTimeSpent" value="124897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2200,38 +2490,38 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3397524" sideWeight="0.50647247" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16828479" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21278317" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5405777" sideWeight="0.49514562" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39752406" sideWeight="0.5048544" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16828479" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.49676377" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3397524" sideWeight="0.4935275" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.49190938" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22411004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17961165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21278317" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5405777" sideWeight="0.49514562" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3397524" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26409903" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2289,39 +2579,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Небольшие изменения в класса Рецепт (вместо Time cooking_time Integer time) и поправлен запрос на получение всех рецептов (для рецептов, за каоторые еще не голосовали, возвращает 0)" />
     <MESSAGE value="Изменения в запросах" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения в запросах" />
+    <MESSAGE value="Финальная версия" />
+    <option name="LAST_COMMIT_MESSAGE" value="Финальная версия" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>36</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/hse/DBHelper.java</url>
-          <line>165</line>
+          <line>157</line>
           <properties />
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>100</line>
-          <properties />
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/hse/DBStarter.java</url>
@@ -2336,12 +2604,6 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>125</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/hse/test_responses/Client.java</url>
           <line>19</line>
           <properties />
@@ -2349,235 +2611,46 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>84</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>141</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/hse/service/UserService.java</url>
-          <line>169</line>
+          <line>183</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>151</line>
+          <line>95</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>160</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
-          <line>170</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/response_examples/user_info.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/response_examples/finder_by_ingr.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/response_examples/finder.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="100" column="1" lean-forward="false" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/response_examples/all_receipts.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/response_examples/user_favorite.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/response_examples/receipt_details.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/response_examples/user_receipts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/d32f4d9b-6179-44cf-a312-db5076522e81.SCHEMA:FOOD.PUBLIC">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>d32f4d9b-6179-44cf-a312-db5076522e81.SCHEMA:FOOD.PUBLIC</OriginalElement>
-          <nodes>
-            <node x="775.348484848485" y="519.0">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT_DETAILS</node>
-            <node x="426.0" y="219.0">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT</node>
-            <node x="65.26515151515162" y="0.0">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.USER</node>
-            <node x="10.75" y="542.0">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.FAVORITE</node>
-            <node x="407.09848484848493" y="46.0">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.NUTRITIONAL_VALUE</node>
-            <node x="191.75" y="507.0">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.VOTING</node>
-            <node x="797.598484848485" y="299.5">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.INGREDIENT</node>
-            <node x="752.098484848485" y="46.0">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.CATEGORY</node>
-            <node x="463.75" y="518.5">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.STEPS</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.FAVORITE" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT">
-              <point x="40.25" y="-38.0" />
-              <point x="131.5" y="477.0" />
-              <point x="463.25" y="477.0" />
-              <point x="-111.75" y="119.0" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT_DETAILS" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.INGREDIENT">
-              <point x="42.25" y="-61.0" />
-              <point x="0.0" y="38.5" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.VOTING" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.USER">
-              <point x="-56.25" y="-73.0" />
-              <point x="248.00000000000003" y="194.0" />
-              <point x="209.76515151515162" y="194.0" />
-              <point x="0.0" y="84.5" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT_DETAILS" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT">
-              <point x="-42.25" y="-61.0" />
-              <point x="817.598484848485" y="487.0" />
-              <point x="686.75" y="487.0" />
-              <point x="111.75" y="119.0" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.CATEGORY">
-              <point x="99.33333333333337" y="-119.0" />
-              <point x="674.3333333333334" y="194.0" />
-              <point x="858.098484848485" y="194.0" />
-              <point x="0.0" y="38.5" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.NUTRITIONAL_VALUE">
-              <point x="0.0" y="-119.0" />
-              <point x="575.0" y="194.0" />
-              <point x="569.598484848485" y="194.0" />
-              <point x="0.0" y="38.5" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.STEPS" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT">
-              <point x="0.0" y="-61.5" />
-              <point x="37.25" y="119.0" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.FAVORITE" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.USER">
-              <point x="-40.25" y="-38.0" />
-              <point x="51.0" y="194.0" />
-              <point x="113.4318181818183" y="194.0" />
-              <point x="-96.33333333333331" y="84.5" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.USER">
-              <point x="-99.33333333333331" y="-119.0" />
-              <point x="475.66666666666674" y="194.0" />
-              <point x="306.09848484848493" y="194.0" />
-              <point x="96.33333333333331" y="84.5" />
-            </edge>
-            <edge source="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.VOTING" target="d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT">
-              <point x="56.25" y="-73.0" />
-              <point x="360.5" y="487.0" />
-              <point x="537.75" y="487.0" />
-              <point x="-37.25" y="119.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7283349561830574" x="320.0" y="193.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/security/interfaces/RSAPublicKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar!/sun/security/rsa/RSAPublicKeyImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/security/MessageDigest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="362" column="18" lean-forward="false" selection-start-line="362" selection-start-column="18" selection-end-line="362" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/message/BasicNameValuePair.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/NameValuePair.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/entity/BasicHttpEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar!/org/apache/http/HttpEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/annotation/Target.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -2613,28 +2686,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/Voting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/service/ReceiptService.java" />
-    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.NUTRITIONAL_VALUE">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.INGREDIENT">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -2642,65 +2694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/test_responses/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/utils/Errors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/Ingredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#805#806#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.USER">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="822" column="15" lean-forward="false" selection-start-line="822" selection-start-column="15" selection-end-line="822" selection-end-column="15" />
-          <folding>
-            <element signature="e#35418#35419#0" expanded="false" />
-            <element signature="e#35465#35466#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2711,57 +2708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/rr">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.USER_PRIVATE">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/service/TockenManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/DBStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.CATEGORY">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2776,6 +2726,293 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5525">
           <caret line="325" column="75" lean-forward="false" selection-start-line="325" selection-start-column="75" selection-end-line="325" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/Ingredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#771#772#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/rr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/Test.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.USER_PRIVATE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="314" column="19" lean-forward="false" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/ru/hse/test_responses/Client.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-458">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/AutoCloseable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="96" column="12" lean-forward="true" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/test_responses/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/d32f4d9b-6179-44cf-a312-db5076522e81.DATABASE:FOOD">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>d32f4d9b-6179-44cf-a312-db5076522e81.DATABASE:FOOD</OriginalElement>
+          <nodes>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.COLLATIONS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.VIEWS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.IN_DOUBT</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.NUTRITIONAL_VALUE</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.INDEXES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.SCHEMATA</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.DOMAINS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.CATALOGS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.TABLE_PRIVILEGES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.SETTINGS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.USER_PRIVATE</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.SESSIONS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.QUERY_STATISTICS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.ROLES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.CONSTRAINTS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.RIGHTS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.USER</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.CROSS_REFERENCES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.FAVORITE</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.VOTING</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.INGREDIENT</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.CATEGORY</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.TRIGGERS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.LOCKS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.HELP</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.RECEIPT_DETAILS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.USERS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.SESSION_STATE</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.SEQUENCES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.TABLES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.CONSTANTS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.PUBLIC.STEPS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.TABLE_TYPES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.TYPE_INFO</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.COLUMN_PRIVILEGES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.FUNCTION_ALIASES</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.FUNCTION_COLUMNS</node>
+            <node x="" y="">d32f4d9b-6179-44cf-a312-db5076522e81.TABLE:FOOD.INFORMATION_SCHEMA.COLUMNS</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5937777777777777" x="784.8547904191618" y="334.14071856287427" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.4.196/h2-1.4.196.jar!/org/h2/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-925">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/DBStarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="65" column="9" lean-forward="false" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.NUTRITIONAL_VALUE">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="96" column="32" lean-forward="false" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/DBConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.USER">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.RECEIPT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.RECEIPT_DETAILS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.STEPS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/utils/Errors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/service/TokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -2788,10 +3025,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="147" column="29" lean-forward="true" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
+        <state relative-caret-position="-886">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#2203#2204#0" expanded="true" />
+            <element signature="e#2235#2236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/Voting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/response_examples/all_receipts.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/service/CommonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="33" column="59" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2800,61 +3064,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.RECEIPT_DETAILS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/Receipt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/model/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        <state relative-caret-position="68">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1643#1644#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5287">
-          <caret line="313" column="48" lean-forward="false" selection-start-line="313" selection-start-column="48" selection-end-line="313" selection-end-column="48" />
+        <state relative-caret-position="175">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1522066540000" expanded="true" signature="7995:8174" ph="INSERT INTO RECEIPT... " />
+            <marker date="1538659034744" expanded="true" signature="7666:7861" ph="INSERT INTO RECEIPT... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.RECEIPT">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/Facade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3037#3038#0" expanded="true" />
+            <element signature="e#3099#3100#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/fb6b5387/d32f4d9b-6179-44cf-a312-db5076522e81/FOOD.PUBLIC.STEPS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/hse/rest/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
